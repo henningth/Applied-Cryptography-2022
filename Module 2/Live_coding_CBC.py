@@ -1,5 +1,5 @@
 """
-Live coding AES-ECB example from Lec. 2.
+Live coding AES-CBC example from Lec. 2.
 """
 
 # Import cryptographic algorithms
