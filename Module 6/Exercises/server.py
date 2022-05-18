@@ -13,6 +13,14 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     conn, addr = s.accept()
     with conn:
         print("Connected by:", addr)
+        
+        # Add your code here for the key exchange
+        # (exercise 2)
+
+        # In the below loop, actual data is 
+        # exchanged between server and client.
+        # (exercise 3)
+        """
         while True:
             r_data = conn.recv(1024)
             if not r_data:
@@ -20,3 +28,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             print("Data received: ", r_data)
             s_data = input("Enter data to send: ")
             conn.sendall(s_data.encode())
+        """
